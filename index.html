@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+
+        div#container {
+            height: 100vw;
+            width: 100vw;
+            text-align: center;
+            background-image: url(asset/sky.jpeg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="location">Kuala Lumpur</h1>
+
+        <img id="icon" src="icons/01d.png" />
+        <h3 id="weather">Few Clouds</h3>
+
+        <p>Temp: <span id="temp">29</span></p>
+        <p>Humidity: <span id="humidity">100</span></p>
+
+        <div>
+            <button onClick="getWeather('Kuala Lumpur')">Kuala Lumpur</button>
+            <button onClick="getWeather('Ipoh')">Ipoh</button>
+            <button onClick="getWeather('Pulau Pinang')">Penang</button>
+            <button onClick="getWeather('Johor')">Johor</button>
+            <button onClick="getWeather('Sabah')">Sabah</button>
+            <button onClick="getWeather('Sarawak')">Sarawak</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
